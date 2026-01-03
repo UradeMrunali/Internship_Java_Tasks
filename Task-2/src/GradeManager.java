@@ -2,7 +2,6 @@ import java.util.*;
 import java.util.Map.Entry;
 
 public class GradeManager {
-
     private static final HashMap<String, Integer> studentData = new HashMap<>();
     private static final Scanner scanner = new Scanner(System.in);
 
@@ -101,3 +100,4 @@ public class GradeManager {
         }
     }
 }
+
