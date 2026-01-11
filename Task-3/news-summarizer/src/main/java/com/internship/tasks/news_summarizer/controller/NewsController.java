@@ -9,7 +9,6 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/news")
-// This allows your React frontend (running on port 3000) to access this backend
 @CrossOrigin(origins = "http://localhost:3000")
 public class NewsController {
 
