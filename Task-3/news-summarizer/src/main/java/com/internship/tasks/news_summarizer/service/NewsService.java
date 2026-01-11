@@ -13,16 +13,13 @@ public class NewsService {
 
     private static final String API_KEY = "eb2f5595e96742ed903d3fc04d3926bc";
 
-    // URL for specific categories (Tech, Business, Sports)
     private static final String HEADLINES_URL = "https://newsapi.org/v2/top-headlines?country=us&category=%s&apiKey=" + API_KEY;
 
-    // URL for searching any topic (Bitcoin, NASA, etc)
     private static final String SEARCH_URL = "https://newsapi.org/v2/everything?q=%s&apiKey=" + API_KEY;
 
     public List<Article> fetchArticles(String category) {
         String finalUrl;
 
-        // Logic: Is this a standard category or a custom search?
         if (category.equals("technology") || category.equals("business") || category.equals("sports")) {
             System.out.println("Fetching Headlines for: " + category);
             finalUrl = String.format(HEADLINES_URL, category);
@@ -46,7 +43,6 @@ public class NewsService {
 
                 if (description == null || description.isEmpty()) description = title;
 
-                // Summarize
                 String shortSummary = summarizeText(description);
 
                 summarizedArticles.add(new Article(title, shortSummary, url, imageUrl));
