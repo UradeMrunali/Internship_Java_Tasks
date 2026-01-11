@@ -1,0 +1,148 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+}
+
+.navbar {
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* SEARCH BAR STYLES */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;    /* Space above search bar */
+  margin-bottom: 40px; /* Space below search bar */
+}
+
+.search-container input {
+  padding: 12px;
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 25px 0 0 25px; /* Rounded left corners */
+  outline: none;
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+.search-container button {
+  border-radius: 0 25px 25px 0; /* Rounded right corners */
+  background-color: #2ecc71;
+  color: white;
+  margin: 0; /* Reset default button margin */
+}
+
+.search-container button:hover {
+  background-color: #27ae60;
+}
+
+/* CATEGORY BUTTONS */
+.category-bar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+  flex-wrap: wrap; /* Allows buttons to stack on small screens */
+}
+
+button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  background-color: #e0e0e0;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #d6d6d6;
+}
+
+button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+/* CONTENT STYLES */
+.topic-header {
+  text-align: center;
+  color: #555;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #007bff;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 25px;
+  padding: 0 40px 40px 40px;
+}
+
+.news-card {
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: transform 0.2s;
+  display: flex;
+  flex-direction: column;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.card-body h3 {
+  font-size: 1.1rem;
+  margin: 0 0 15px 0;
+}
+
+.summary-box {
+  background-color: #f8f9fa;
+  padding: 10px;
+  border-left: 4px solid #007bff;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+.read-btn {
+  margin-top: auto;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.loading, .no-data {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 50px;
+}
