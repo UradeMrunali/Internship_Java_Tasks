@@ -4,7 +4,6 @@ import java.util.Map.Entry;
 public class GradeManager {
     private static final HashMap<String, Integer> studentData = new HashMap<>();
     private static final Scanner scanner = new Scanner(System.in);
-
     public static void main(String[] args) {
         boolean isRunning = true;
 
@@ -91,7 +90,6 @@ public class GradeManager {
 
         List<Entry<String, Integer>> list = new ArrayList<>(studentData.entrySet());
         list.sort((a, b) -> b.getValue().compareTo(a.getValue()));
-
         System.out.println("\n--- Final Performance Report (Top to Bottom) ---");
         int rank = 1;
         for (Entry<String, Integer> entry : list) {
