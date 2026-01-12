@@ -47,7 +47,6 @@ public class NumberOperations {
         }
     }
 
-    // Method to check if a number is Prime
     public static void checkPrime(Scanner sc) {
         System.out.print("Enter number to check prime: ");
         int num = sc.nextInt();
@@ -71,7 +70,6 @@ public class NumberOperations {
         }
     }
 
-    // Method to check for Palindrome
     public static void checkPalindrome(Scanner sc) {
         System.out.print("Enter number to check palindrome: ");
         int num = sc.nextInt();
@@ -91,7 +89,6 @@ public class NumberOperations {
         }
     }
 
-    // Method for Factorial
     public static void calculateFactorial(Scanner sc) {
         System.out.print("Enter a number for factorial: ");
         int num = sc.nextInt();
@@ -103,7 +100,6 @@ public class NumberOperations {
         System.out.println("Factorial of " + num + " is " + fact);
     }
 
-    // Method for Fibonacci
     public static void printFibonacci(Scanner sc) {
         System.out.print("How many terms to print? ");
         int count = sc.nextInt();
@@ -120,3 +116,4 @@ public class NumberOperations {
         System.out.println();
     }
 }
+
