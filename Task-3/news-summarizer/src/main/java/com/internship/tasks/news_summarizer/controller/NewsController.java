@@ -1,5 +1,4 @@
 package com.internship.tasks.news_summarizer.controller;
-
 import com.internship.tasks.news_summarizer.model.Article;
 import com.internship.tasks.news_summarizer.service.NewsService;
 import org.springframework.beans.factory.annotation.Autowired;
