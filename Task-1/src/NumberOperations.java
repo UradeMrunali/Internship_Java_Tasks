@@ -4,7 +4,6 @@ public class NumberOperations {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         boolean keepRunning = true;
-
         System.out.println("--- Number Operations ---");
 
         while (keepRunning) {
@@ -115,5 +114,6 @@ public class NumberOperations {
         System.out.println();
     }
 }
+
 
 
