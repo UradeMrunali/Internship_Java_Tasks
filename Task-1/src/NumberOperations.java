@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class NumberOperations {
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         boolean keepRunning = true;
@@ -116,4 +115,5 @@ public class NumberOperations {
         System.out.println();
     }
 }
+
 
