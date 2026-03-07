@@ -5,7 +5,6 @@ public class GradeManager {
     private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
         boolean isRunning = true;
-
         System.out.println("--- Welcome to the Teacher's Grade Portal ---");
 
         while (isRunning) {
@@ -97,4 +96,5 @@ public class GradeManager {
         }
     }
 }
+
 
