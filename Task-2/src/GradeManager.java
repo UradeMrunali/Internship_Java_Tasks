@@ -14,7 +14,6 @@ public class GradeManager {
             System.out.println("3. Generate Report (Sorted High to Low)");
             System.out.println("4. Exit");
             System.out.print("Enter choice: ");
-
             try {
                 int choice = scanner.nextInt();
                 scanner.nextLine();
@@ -96,5 +95,6 @@ public class GradeManager {
         }
     }
 }
+
 
 
