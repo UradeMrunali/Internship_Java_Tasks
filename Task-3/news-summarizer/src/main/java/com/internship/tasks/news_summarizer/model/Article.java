@@ -5,7 +5,6 @@ public class Article {
     private String originalUrl;
     private String imageUrl;
 
-  
     public Article(String title, String summary, String originalUrl, String imageUrl) {
         this.title = title;
         this.summary = summary;
