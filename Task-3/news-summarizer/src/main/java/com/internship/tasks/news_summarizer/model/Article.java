@@ -11,8 +11,6 @@ public class Article {
         this.originalUrl = originalUrl;
         this.imageUrl = imageUrl;
     }
-
-    
     public String getTitle() { return title; }
     public void setTitle(String title) { this.title = title; }
 
