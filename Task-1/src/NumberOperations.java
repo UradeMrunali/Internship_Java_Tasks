@@ -13,7 +13,6 @@ public class NumberOperations {
             System.out.println("4. Fibonacci Series");
             System.out.println("5. Exit");
             System.out.print("Enter choice: ");
-
             if (sc.hasNextInt()) {
                 int choice = sc.nextInt();
 
@@ -113,4 +112,5 @@ public class NumberOperations {
         System.out.println();
     }
 }
+
 
