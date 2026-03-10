@@ -42,7 +42,6 @@ public class NumberOperations {
             }
         }
     }
-
     public static void checkPrime(Scanner sc) {
         System.out.print("Enter number to check prime: ");
         int num = sc.nextInt();
@@ -112,5 +111,6 @@ public class NumberOperations {
         System.out.println();
     }
 }
+
 
 
