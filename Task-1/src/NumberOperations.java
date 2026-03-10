@@ -5,7 +5,6 @@ public class NumberOperations {
         Scanner sc = new Scanner(System.in);
         boolean keepRunning = true;
         System.out.println("--- Number Operations ---");
-
         while (keepRunning) {
             System.out.println("Select an operation:");
             System.out.println("1. Check Prime");
@@ -114,3 +113,4 @@ public class NumberOperations {
         System.out.println();
     }
 }
+
